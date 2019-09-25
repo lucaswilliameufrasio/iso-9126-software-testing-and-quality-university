@@ -13,7 +13,7 @@
         <div class="panel-body">
             <div class="row">
                 <div class="col-xs-12 form-group">
-                    {!! Form::label('topic_id', 'Topic*', ['class' => 'control-label']) !!}
+                    {!! Form::label('topic_id', 'Tópico*', ['class' => 'control-label']) !!}
                     {!! Form::select('topic_id', $topics, old('topic_id'), ['class' => 'form-control']) !!}
                     <p class="help-block"></p>
                     @if($errors->has('topic_id'))
@@ -25,7 +25,7 @@
             </div>
             <div class="row">
                 <div class="col-xs-12 form-group">
-                    {!! Form::label('question_text', 'Question text*', ['class' => 'control-label']) !!}
+                    {!! Form::label('question_text', 'Texto da questão*', ['class' => 'control-label']) !!}
                     {!! Form::textarea('question_text', old('question_text'), ['class' => 'form-control ', 'placeholder' => '']) !!}
                     <p class="help-block"></p>
                     @if($errors->has('question_text'))
@@ -37,7 +37,7 @@
             </div>
             <div class="row">
                 <div class="col-xs-12 form-group">
-                    {!! Form::label('code_snippet', 'Code snippet', ['class' => 'control-label']) !!}
+                    {!! Form::label('code_snippet', 'Fragmento de Código', ['class' => 'control-label']) !!}
                     {!! Form::textarea('code_snippet', old('code_snippet'), ['class' => 'form-control ', 'placeholder' => '']) !!}
                     <p class="help-block"></p>
                     @if($errors->has('code_snippet'))
@@ -49,7 +49,7 @@
             </div>
             <div class="row">
                 <div class="col-xs-12 form-group">
-                    {!! Form::label('answer_explanation', 'Answer explanation*', ['class' => 'control-label']) !!}
+                    {!! Form::label('answer_explanation', 'Explicação da resposta*', ['class' => 'control-label']) !!}
                     {!! Form::textarea('answer_explanation', old('answer_explanation'), ['class' => 'form-control ', 'placeholder' => '']) !!}
                     <p class="help-block"></p>
                     @if($errors->has('answer_explanation'))
@@ -61,7 +61,7 @@
             </div>
             <div class="row">
                 <div class="col-xs-12 form-group">
-                    {!! Form::label('more_info_link', 'More info link', ['class' => 'control-label']) !!}
+                    {!! Form::label('more_info_link', 'Mais informações no link', ['class' => 'control-label']) !!}
                     {!! Form::text('more_info_link', old('more_info_link'), ['class' => 'form-control', 'placeholder' => '']) !!}
                     <p class="help-block"></p>
                     @if($errors->has('more_info_link'))

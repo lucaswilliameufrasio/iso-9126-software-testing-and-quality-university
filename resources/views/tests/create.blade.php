@@ -17,7 +17,7 @@
             <div class="row">
                 <div class="col-xs-12 form-group">
                     <div class="form-group">
-                        <strong>Question {{ $i }}.<br />{!! nl2br($question->question_text) !!}</strong>
+                        <strong>Questão {{ $i }}.<br />{!! nl2br($question->question_text) !!}</strong>
 
                         @if ($question->code_snippet != '')
                             <div class="code_snippet">{!! $question->code_snippet !!}</div>

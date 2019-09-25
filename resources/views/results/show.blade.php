@@ -41,7 +41,7 @@
                             </tr>
                         @endif
                         <tr>
-                            <td>Options</td>
+                            <td>Alternativas</td>
                             <td>
                                 <ul>
                                 @foreach($result->question->options as $option)
@@ -55,7 +55,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>Answer Explanation</td>
+                            <td>Explicação da resposta</td>
                             <td>
                             {!! $result->question->answer_explanation  !!}
                                 @if ($result->question->more_info_link != '')

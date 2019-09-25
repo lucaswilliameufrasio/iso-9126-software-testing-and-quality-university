@@ -37,7 +37,7 @@
             </div>
             <div class="row">
                 <div class="col-xs-12 form-group">
-                    {!! Form::label('password', 'Password', ['class' => 'control-label']) !!}
+                    {!! Form::label('password', 'Senha', ['class' => 'control-label']) !!}
                     {!! Form::password('password', ['class' => 'form-control', 'placeholder' => '']) !!}
                     <p class="help-block"></p>
                     @if($errors->has('password'))
@@ -49,7 +49,7 @@
             </div>
             <div class="row">
                 <div class="col-xs-12 form-group">
-                    {!! Form::label('role_id', 'Role*', ['class' => 'control-label']) !!}
+                    {!! Form::label('role_id', 'Nível*', ['class' => 'control-label']) !!}
                     {!! Form::select('role_id', $roles, old('role_id'), ['class' => 'form-control']) !!}
                     <p class="help-block"></p>
                     @if($errors->has('role_id'))

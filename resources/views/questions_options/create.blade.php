@@ -12,7 +12,7 @@
         <div class="panel-body">
             <div class="row">
                 <div class="col-xs-12 form-group">
-                    {!! Form::label('question_id', 'question*', ['class' => 'control-label']) !!}
+                    {!! Form::label('question_id', 'questão*', ['class' => 'control-label']) !!}
                     {!! Form::select('question_id', $questions, old('question_id'), ['class' => 'form-control']) !!}
                     <p class="help-block"></p>
                     @if($errors->has('question_id'))
@@ -24,7 +24,7 @@
             </div>
             <div class="row">
                 <div class="col-xs-12 form-group">
-                    {!! Form::label('option', 'Option*', ['class' => 'control-label']) !!}
+                    {!! Form::label('option', 'Alternativa*', ['class' => 'control-label']) !!}
                     {!! Form::text('option', old('option'), ['class' => 'form-control', 'placeholder' => '']) !!}
                     <p class="help-block"></p>
                     @if($errors->has('option'))
@@ -36,7 +36,7 @@
             </div>
             <div class="row">
                 <div class="col-xs-12 form-group">
-                    {!! Form::label('correct', 'Correct', ['class' => 'control-label']) !!}
+                    {!! Form::label('Correta', 'Resposta', ['class' => 'control-label']) !!}
                     {!! Form::hidden('correct', 0) !!}
                     {!! Form::checkbox('correct', 1, 0, ['class' => 'form-control']) !!}
                     <p class="help-block"></p>
